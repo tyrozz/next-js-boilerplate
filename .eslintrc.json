@@ -1,7 +1,7 @@
 {
     "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
     "parser": "@typescript-eslint/parser",
-    "plugins": ["prettier", "@typescript-eslint"],
+    "plugins": ["prettier", "@typescript-eslint", "testing-library"],
     "rules": {
         "prettier/prettier": [
             "error",
@@ -10,5 +10,18 @@
             }
         ]
     },
-    "root": true
+    "root": true,
+    "overrides": [
+        // Configuration for testing
+        {
+            "files": ["**/*.test.ts", "**/*.test.tsx"],
+            "plugins": ["jest", "jest-formatting", "testing-library", "jest-dom"],
+            "extends": [
+                "plugin:jest/recommended",
+                "plugin:jest-formatting/recommended",
+                "plugin:testing-library/react",
+                "plugin:jest-dom/recommended"
+            ]
+        }
+    ]
 }
