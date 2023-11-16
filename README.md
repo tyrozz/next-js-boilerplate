@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Next Js 13 Boilerplate
 
-## Getting Started
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-First, run the development server:
+Nextjs 14 boilerplate with App Router support, Tailwind CSS, and Typescript.
+
+## 🧰 Features
+
+-   [Next.js 14](https://nextjs.org/) with App Router support
+
+-   [Tailwind CSS](https://tailwindcss.com/) integration
+
+-   [Shadcn UI](https://ui.shadcn.com/) and [Radix UI](https://www.radix-ui.com/) for UI
+
+-   Type checking with [TypeScript](https://www.typescriptlang.org)
+
+-   Strict Mode for TypeScript and React 18
+
+-   Unit Testing with [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+
+-   E2E Testing with [Cypress](https://www.cypress.io/)
+
+-   Linter with [ESLint](https://eslint.org)
+
+-   Code Formatter with [Prettier](https://prettier.io)
+
+-   🦊 Husky for Git Hooks
+
+-   Lint-staged for running linters on Git staged files
+
+## 🚦 Getting Started
+
+Follow these instructions to get your project up and running.
+
+### Prerequisites
+
+-   Node.js
+
+-   yarn
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tyrozz/next-js-boilerplate.git
+cd next-js-boilerplate
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Start the development server:
 
-## Learn More
+```bash
+yarn run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Running Tests
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run the Jest unit tests:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+yarn run test
+```
 
-## Deploy on Vercel
+To run the Cypress end-to-end tests:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+yarn run cypress
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🤝 Contributing
+
+Contributions are welcome! If you find a bug or have a suggestion for improvement, please open an issue. I value your feedback and are open to any ideas for making this project better, appreciate your support in making this project better for everyone!
+
+## 📝 License
+
+This project is licensed under the MIT License - see the See [LICENSE](LICENSE) for more information.
+
+## 👨‍💻 Author
+
+-   [Ozan Yildirim](https://www.ozanyildirim.me/)
