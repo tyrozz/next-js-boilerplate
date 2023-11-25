@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 
+import { ClerkProvider } from '@clerk/nextjs'
+
 import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
@@ -10,15 +12,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en" suppressHydrationWarning>
-            <head />
-            <body>
-                <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-                    <div className="relative flex min-h-screen flex-col">
-                        <div className="flex-1">{children}</div>
-                    </div>
-                </ThemeProvider>
-            </body>
-        </html>
+        <ClerkProvider>
+            <html lang="en" suppressHydrationWarning>
+                <head />
+                <body>
+                    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+                        <div className="relative flex min-h-screen flex-col">
+                            <div className="flex-1">{children}</div>
+                        </div>
+                    </ThemeProvider>
+                </body>
+            </html>
+        </ClerkProvider>
     )
 }

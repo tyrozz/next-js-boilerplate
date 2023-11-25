@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import { UserButton, SignedIn, SignedOut } from '@clerk/nextjs'
+
 import { siteConfig } from '@/config/site'
 import { buttonVariants } from '@/components/ui/button'
 import { Icons } from '@/components/icons'
@@ -35,13 +37,20 @@ export async function SiteHeader() {
                                 <span className="sr-only">Twitter</span>
                             </div>
                         </Link>
-                        <Link href="/" className={buttonVariants({ variant: 'outline' })}>
-                            Sign in
-                        </Link>
-                        <Link href="/" className={buttonVariants({ variant: 'outline' })}>
-                            Register
-                        </Link>
                         <ThemeToggle />
+                        <SignedIn>
+                            <UserButton afterSignOutUrl="/" />
+                        </SignedIn>
+                        <SignedOut>
+                            <Link href="/sign-in" className={buttonVariants({ variant: 'outline' })}>
+                                Sign in
+                            </Link>
+                        </SignedOut>
+                        <SignedOut>
+                            <Link href="/sign-up" className={buttonVariants({ variant: 'outline' })}>
+                                Register
+                            </Link>
+                        </SignedOut>
                     </nav>
                 </div>
             </div>
