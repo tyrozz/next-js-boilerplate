@@ -7,6 +7,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { Icons } from '@/components/icons'
 import { MainNav } from '@/components/main-nav'
 import { ThemeToggle } from './theme-toggle'
+import { ClerkOrganizationSwitcher } from './clerk-organization-switcher'
 
 export async function SiteHeader() {
     return (
@@ -39,6 +40,7 @@ export async function SiteHeader() {
                         </Link>
                         <ThemeToggle />
                         <SignedIn>
+                            <ClerkOrganizationSwitcher />
                             <UserButton afterSignOutUrl="/" />
                         </SignedIn>
                         <SignedOut>

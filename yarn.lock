@@ -380,6 +380,11 @@
     js-cookie "3.0.1"
     swr "2.2.0"
 
+"@clerk/themes@^1.7.9":
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/@clerk/themes/-/themes-1.7.9.tgz#b2650a6b3c36109e077ff12891425192e8f5a801"
+  integrity sha512-9hXxgoPuUSlZ7sH9diJEK1rTWEnk0zGKBYw4Tqaqp0RA1dtB+OHE02DK5pnTypZTnreBJYac3VmxFVTxVV35xg==
+
 "@clerk/types@3.58.0":
   version "3.58.0"
   resolved "https://registry.yarnpkg.com/@clerk/types/-/types-3.58.0.tgz#400168310fb1b50e3c4a495facac78479db81c47"
@@ -6608,8 +6613,3 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
-
-zod@^3.22.4:
-  version "3.22.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
-  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
