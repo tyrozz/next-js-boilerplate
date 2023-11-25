@@ -4,6 +4,7 @@ import { siteConfig } from '@/config/site'
 import { buttonVariants } from '@/components/ui/button'
 import { Icons } from '@/components/icons'
 import { MainNav } from '@/components/main-nav'
+import { ThemeToggle } from './theme-toggle'
 
 export async function SiteHeader() {
     return (
@@ -40,6 +41,7 @@ export async function SiteHeader() {
                         <Link href="/" className={buttonVariants({ variant: 'outline' })}>
                             Register
                         </Link>
+                        <ThemeToggle />
                     </nav>
                 </div>
             </div>
