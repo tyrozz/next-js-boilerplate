@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { notFound } from 'next/navigation'
-import { allAuthors, allPosts } from 'contentlayer/generated'
-
-import '@/styles/mdx.css'
 import { Metadata } from 'next'
 
+import { allAuthors, allPosts } from 'contentlayer/generated'
+import '@/styles/mdx.css'
+
 import { absoluteUrl } from '@/lib/utils'
-import { SiteHeader } from '@/components/site-header'
 import { BlogPostWrapper } from '@/components/blog-post-wrapper'
 
 interface PostPageProps {
@@ -90,7 +89,6 @@ export default async function PostPage({ params }: PostPageProps) {
     const authors = post.authors.map((author) => allAuthors.find(({ slug }) => slug === `/authors/${author}`))
     return (
         <>
-            <SiteHeader />
             <article className="mx-auto max-w-xl py-8">
                 <BlogPostWrapper post={post} authors={authors} />
             </article>
