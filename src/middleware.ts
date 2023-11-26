@@ -5,7 +5,19 @@ import { authMiddleware, redirectToSignIn } from '@clerk/nextjs'
 import { clerkClient } from '@clerk/nextjs'
 
 export default authMiddleware({
-    publicRoutes: ['/', '/about', '/pricing', '/sign-in(.*)', '/sign-up(.*)', '/api(.*)'],
+    publicRoutes: [
+        '/',
+        '/about',
+        '/pricing',
+        '/sign-in(.*)',
+        '/sign-up(.*)',
+        '/api(.*)',
+        '/blog(.*)',
+        '/docs(.*)',
+        '/roadmap',
+        '/changelog',
+        '/api/og(.*)',
+    ],
     async afterAuth(auth, req, evt) {
         // handle users who aren't authenticated
         if (!auth.userId && !auth.isPublicRoute) {

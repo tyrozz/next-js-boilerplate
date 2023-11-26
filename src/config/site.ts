@@ -16,6 +16,14 @@ export const siteConfig = {
             title: 'Dashboard',
             href: '/dashboard',
         },
+        {
+            title: 'Blog',
+            href: '/blog',
+        },
+        {
+            title: 'Docs',
+            href: '/docs',
+        },
     ],
     links: {
         twitter: 'https://twitter.com/',

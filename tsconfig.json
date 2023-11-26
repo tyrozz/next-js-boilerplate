@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "baseUrl": ".",
         "target": "es5",
         "lib": ["dom", "dom.iterable", "esnext"],
         "allowJs": true,
@@ -19,10 +20,18 @@
             }
         ],
         "paths": {
-            "@/*": ["./src/*"]
+            "@/*": ["./src/*"],
+            "contentlayer/generated": ["./.contentlayer/generated"]
         }
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "./jest-setup.ts"],
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        ".next/types/**/*.ts",
+        "./jest-setup.ts",
+        ".contentlayer/generated"
+    ],
     "exclude": ["node_modules", "cypress/**/*.ts", "./cypress.config.ts"],
     "types": ["node", "jest", "@testing-library/jest-dom"]
 }

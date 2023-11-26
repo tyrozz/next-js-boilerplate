@@ -46,3 +46,6 @@ next-env.d.ts
 
 # local folder
 local
+
+# contentlayer
+.contentlayer

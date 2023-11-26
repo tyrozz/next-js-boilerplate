@@ -8,6 +8,7 @@ import { Icons } from '@/components/icons'
 
 interface MainNavProps {
     items?: NavItem[]
+    children?: React.ReactNode
 }
 
 export function MainNav({ items }: MainNavProps) {
